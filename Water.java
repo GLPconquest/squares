@@ -16,7 +16,7 @@ public class Water extends Square{
 	private static final float ELECTRICITY = 0;
 	
 	public Water(Position position, int level, int faction, boolean unit) {
-		super("water", MOVEMENT_COST, new Bonus(ATTACK_BONUS,DEFENSE_BONUS),
+		super(0, MOVEMENT_COST, new Bonus(ATTACK_BONUS,DEFENSE_BONUS),
 				new Resources(MONEY, FOOD, OIL, ELECTRICITY), level, MAX_LEVEL,
 				position, faction, unit);
 	}

@@ -6,7 +6,19 @@ import datas.Resources;
 import exceptions.AlreadyMaxLevelException;
 
 public abstract class Square {
-	private String type;
+	private int type;
+	/*
+	 * 0 = Water
+	 * 1 = Land
+	 * 2 = Desert
+	 * 3 = Forest
+	 * 4 = Mont
+	 * 5 = Mine
+	 * 6 = Farm
+	 * 7 = OilWell
+	 * 8 = NuclearPlant
+	 * 9 = City
+	 */
 	private float moveCost;
 	private Bonus bonus;
 	private Resources resources;
@@ -16,7 +28,7 @@ public abstract class Square {
 	private int faction; //from 0 to 4, 0 = no faction, other number = possessed by this faction
 	private boolean unit; //0 = no unit, 1 = unit from its faction
 	
-	public Square(String type, float moveCost, Bonus bonus, Resources resources, int level, int maxLevel, Position position,int faction, boolean unit) {
+	public Square(int type, float moveCost, Bonus bonus, Resources resources, int level, int maxLevel, Position position,int faction, boolean unit) {
 		setType(type);
 		setMoveCost(moveCost);
 		setBonus(bonus);
@@ -35,10 +47,10 @@ public abstract class Square {
 			throw new AlreadyMaxLevelException(getPosition());
 		}
 	}
-	public String getType() {
+	public int getType() {
 		return type;
 	}
-	public void setType(String type) {
+	public void setType(int type) {
 		this.type = type;
 	}
 	public boolean getUnit() {

@@ -16,7 +16,7 @@ public class Land extends Square{
 	private static final float ELECTRICITY = 0;
 	
 	public Land(Position position, int level, int faction, boolean unit) {
-		super("land", MOVEMENT_COST, new Bonus(ATTACK_BONUS,DEFENSE_BONUS),
+		super(1, MOVEMENT_COST, new Bonus(ATTACK_BONUS,DEFENSE_BONUS),
 				new Resources(MONEY, FOOD, OIL, ELECTRICITY), level, MAX_LEVEL,
 				position, faction, unit);
 	}

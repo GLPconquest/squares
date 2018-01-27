@@ -16,7 +16,7 @@ public class Desert extends Square{
 	private static final float ELECTRICITY = 0;
 	
 	public Desert(Position position, int level, int faction, boolean unit) {
-		super("desert", MOVEMENT_COST, new Bonus(ATTACK_BONUS,DEFENSE_BONUS),
+		super(2, MOVEMENT_COST, new Bonus(ATTACK_BONUS,DEFENSE_BONUS),
 				new Resources(MONEY, FOOD, OIL, ELECTRICITY), level, MAX_LEVEL,
 				position, faction, unit);
 	}

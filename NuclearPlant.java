@@ -16,7 +16,7 @@ public class NuclearPlant  extends Square{
 	private static final float ELECTRICITY = 1000;
 	
 	public NuclearPlant(Position position, int level, int faction, boolean unit) {
-		super("nuclearplant", MOVEMENT_COST, new Bonus(ATTACK_BONUS,DEFENSE_BONUS),
+		super(8, MOVEMENT_COST, new Bonus(ATTACK_BONUS,DEFENSE_BONUS),
 				new Resources(MONEY, FOOD, OIL, ELECTRICITY), level, MAX_LEVEL,
 				position, faction, unit);
 	}

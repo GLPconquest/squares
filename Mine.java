@@ -16,7 +16,7 @@ public class Mine extends Square{
 	private static final float ELECTRICITY = 0;
 	
 	public Mine(Position position, int level, int faction, boolean unit) {
-		super("mine", MOVEMENT_COST, new Bonus(ATTACK_BONUS,DEFENSE_BONUS),
+		super(5, MOVEMENT_COST, new Bonus(ATTACK_BONUS,DEFENSE_BONUS),
 				new Resources(MONEY, FOOD, OIL, ELECTRICITY), level, MAX_LEVEL,
 				position, faction, unit);
 	}

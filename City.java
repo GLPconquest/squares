@@ -16,7 +16,7 @@ public class City extends Square{
 	private static final float ELECTRICITY = 500;
 	
 	public City(Position position, int level, int faction, boolean unit) {
-		super("city", MOVEMENT_COST, new Bonus(ATTACK_BONUS,DEFENSE_BONUS),
+		super(9, MOVEMENT_COST, new Bonus(ATTACK_BONUS,DEFENSE_BONUS),
 				new Resources(MONEY, FOOD, OIL, ELECTRICITY), level, MAX_LEVEL,
 				position, faction, unit);
 	}
