@@ -6,7 +6,6 @@ import datas.Resources;
 import exceptions.AlreadyMaxLevelException;
 
 public abstract class Square {
-	private int type;
 	/*
 	 * 0 = Water
 	 * 1 = Land
@@ -19,6 +18,7 @@ public abstract class Square {
 	 * 8 = NuclearPlant
 	 * 9 = City
 	 */
+	private int type;
 	private float moveCost;
 	private Bonus bonus;
 	private Resources resources;
